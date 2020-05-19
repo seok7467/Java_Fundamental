@@ -3,10 +3,11 @@ package java_20200519;
 public class CalendarDemo {
 
 	public static void main(String[] args) {
-		Calendar c= new Calendar(2020,6,25);
+		Calendar c= new Calendar();
 		
 		
-		c.print();
-		c.printCalendarYear(2020);
+		c.print(2020,5,19);
+		
+		
 	}
 }
