@@ -1,9 +1,10 @@
 package test;
 
-import java_20200515.Customer;
 
-class Test {
-	public void main(String[] args) {
+public class Test {
+	public static void main(String[] args) {
+		
+			for(;;)System.out.println();
 		
 		
 		
@@ -11,5 +12,4 @@ class Test {
 	}
 }
 
-class Box {
-}
+

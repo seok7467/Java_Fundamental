@@ -46,6 +46,8 @@ public class MethodOverloadingDemo {
 		m.print(1.2);
 		m.print(true);
 		
+		System.out.println();
+		
 		m.test(1);
 		m.test(1,2);
 		m.test(1,2,3);
