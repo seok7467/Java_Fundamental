@@ -4,8 +4,8 @@ package test;
 public class Test {
 	public static void main(String[] args) {
 		
-			for(;;)System.out.println();
-		
+			System.out.println(System.nanoTime());
+			System.out.println(System.currentTimeMillis());
 		
 		
 
