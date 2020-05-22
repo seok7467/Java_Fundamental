@@ -59,7 +59,8 @@ public class MemberManagementDemo {
 		String inputData = input("번호를 선택하세요>");
 		run(inputData);
 	}
- 
+ //
+	
 //	1.수정할 아이디를 입력받는다.
 //	2.ArrayList에 있는 고객정보에서 수정할 아이디를 찾아서 있으면 수정할 이름을 입력받고, ArrayList에 고객정보를 수정한다.
 //	   만약, 수정할 아이디가 없으면 "수정할 아이디가 없습니다."메세지를 출력한다. 
