@@ -1,4 +1,4 @@
-package java_20200522;
+package test;
 
 public class Member {
 
