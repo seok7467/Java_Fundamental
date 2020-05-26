@@ -17,9 +17,9 @@ public class FileInputOutputStreamDemo {
 			fos = new FileOutputStream("c:\\dev\\HOffice.exe");
 
 			int readByte = 0;
-			//fis.read() : 한바이트 읽어 변환한다. 더이상 읽을 바이트가 없으면 -1을 반환한다.
+			// fis.read() : 한바이트 읽어 변환한다. 더이상 읽을 바이트가 없으면 -1을 반환한다.
 			while ((readByte = fis.read()) != -1) {
-				//fos.write(~) : 한 바이트 쓰기
+				// fos.write(~) : 한 바이트 쓰기
 				fos.write(readByte);
 			}
 
