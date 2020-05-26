@@ -18,7 +18,7 @@ public class FileInputOutputStreamDemo2 {
 			fos = new FileOutputStream("C:\\dev\\HOffice2.exe");
 
 			int readByteCount = 0;
-			byte[] readBytes = new byte[1024 * 210];
+			byte[] readBytes = new byte[1024 * 8];
 
 			
 			long start = System.currentTimeMillis();

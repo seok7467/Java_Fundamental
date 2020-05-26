@@ -12,10 +12,9 @@ public class PrintStreamDemo {
 
 	public static void main(String[] args) {
 
-		PrintStream monitor = System.out; //출력 장치와 연결된 PrintStream
+		PrintStream monitor = System.out; // 출력 장치와 연결된 PrintStream
 //		monitor.println("HelloWorld");
-		
-		
+
 		FileInputStream fis = null;
 		BufferedInputStream bis = null;
 		FileOutputStream fos = null;
@@ -28,16 +27,21 @@ public class PrintStreamDemo {
 
 			fos = new FileOutputStream("c:\\dev\\123_123.txt");
 			bos = new BufferedOutputStream(fos);
-			//file과 연결된 PrintStream
+			// file과 연결된 PrintStream
 			ps = new PrintStream(bos, true); // true =>autoFlush
 
+			long start = System.currentTimeMillis();
 			int readByte = 0;
 			while ((readByte = bis.read()) != -1) {
 
 				// ps.print(readByte); 버퍼기능이 없어서 속도가 느림 ( 다양한 자료형 출력을 위해 만듦)
 				ps.write(readByte);
 			}
-			// flush() 생갹 가능
+			long end = System.currentTimeMillis();
+
+			System.out.printf("경과시간 : %d %n", end - start);
+//			ps.flush();
+			// flush() 생략 가능
 
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -46,6 +50,8 @@ public class PrintStreamDemo {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
+			if (ps != null)
+				ps.close();
 			try {
 				if (fis != null)
 					fis.close();
@@ -55,8 +61,7 @@ public class PrintStreamDemo {
 					bis.close();
 				if (bos != null)
 					bos.close();
-				if (ps != null)
-					ps.close();
+
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
