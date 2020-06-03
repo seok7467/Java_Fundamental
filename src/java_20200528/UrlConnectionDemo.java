@@ -34,6 +34,7 @@ public class UrlConnectionDemo {
 		while((readLine =br.readLine())!=null) {
 			System.out.println(readLine);
 		}
+		
 		in.close();
 		isr.close();
 		br.close();
