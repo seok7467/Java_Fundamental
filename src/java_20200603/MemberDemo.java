@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class MemberDemo {
 
 	public static void main(String[] args) {
-		MemberDao1 mado = new MemberDao1();
+		MemberDao mado = new MemberDao();
 		int num=1;
 		String name="택진1";
 		String addr = "한국2";
